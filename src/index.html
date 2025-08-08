@@ -7,27 +7,40 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <marquee class="banner">🔥 WELCOME TO TRISHA'S TIKI BAR! 🍹🌴 Enjoy the vibes! 🔥</marquee>
+    <header class="banner">
+        <span aria-label="Welcome Banner">🔥 WELCOME TO TRISHA'S TIKI BAR! 🍹🌴 Enjoy the vibes! 🔥</span>
+    </header>
 
-    <div class="container">
+    <main class="container">
         <h1>🌺 Welcome to Trisha's Tiki Bar! 🍍</h1>
         <p><strong>Where the drinks are strong and the vibes are tropical!</strong></p>
 
-        <img src="images/party-parrot.gif" width="50px" alt="Dancing Parrot" class="center">
+        <img src="images/party-parrot.gif" width="50" alt="Animated Dancing Parrot" class="center">
 
-        <ul class="nav">
-            <li><a href="menu.html">🍹 Drink Menu</a></li>
-            <li><a href="events.html">🎉 Event Calendar</a></li>
-            <li><a href="about.html">🌴 About Us</a></li>
-        </ul>
+        <nav>
+            <ul class="nav">
+                <li><a href="menu.html">🍹 Drink Menu</a></li>
+                <li><a href="events.html">🎉 Event Calendar</a></li>
+                <li><a href="about.html">🌴 About Us</a></li>
+            </ul>
+        </nav>
 
-        <p>You are visitor number:</p>
-        <div id="visitor-counter">000000</div>
+        <section aria-label="Visitor Counter">
+            <p>You are visitor number:</p>
+            <div id="visitor-counter" aria-live="polite">000000</div>
+        </section>
 
-        <audio autoplay loop>
-            <source src="midi/pirate.mid" type="audio/midi">
-        </audio>
-    </div>
+        <section aria-label="Background Music">
+            <audio controls loop>
+                <source src="midi/pirate.mid" type="audio/midi">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Trisha's Tiki Bar</p>
+    </footer>
 
     <script src="tiki-counter.js"></script>
 </body>
