@@ -7,39 +7,20 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="banner">
+    <header class="banner site-header">
         <span aria-label="Welcome Banner">🔥 WELCOME TO TRISHA'S TIKI BAR! 🍹🌴 Enjoy the vibes! 🔥</span>
     </header>
 
-    <main class="container">
-        <h1>🌺 Welcome to Trisha's Tiki Bar! 🍍</h1>
-        <p><strong>Where the drinks are strong and the vibes are tropical!</strong></p>
-
-        <img src="images/party-parrot.gif" width="50" alt="Animated Dancing Parrot" class="center">
-
-        <nav>
-            <ul class="nav">
-                <li><a href="menu.html">🍹 Drink Menu</a></li>
-                <li><a href="events.html">🎉 Event Calendar</a></li>
-                <li><a href="about.html">🌴 About Us</a></li>
-            </ul>
-        </nav>
-
-        <section aria-label="Visitor Counter">
-            <p>You are visitor number:</p>
-            <div id="visitor-counter" aria-live="polite">000000</div>
-        </section>
-
-        <section aria-label="Background Music">
-            <audio controls loop>
-                <source src="midi/pirate.mid" type="audio/midi">
-                Your browser does not support the audio element.
-            </audio>
+    <main class="container" role="main">
+        <h1 style="font-family: 'Pacifico', cursive;">🍹 Tiki Bar Drink Menu 🍍</h1>
+        <section aria-label="Drink Menu Image" class="menu-image-section">
+            <img src="images/menu.png" alt="Trisha's Tiki Bar Drink Menu" class="menu-img" />
         </section>
     </main>
 
     <footer>
         <p>&copy; 2025 Trisha's Tiki Bar</p>
+        <a href="about.html">🌴 About</a>
     </footer>
 
     <script src="tiki-counter.js"></script>
